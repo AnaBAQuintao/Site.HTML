@@ -1,0 +1,27 @@
+body{
+    background-color: #11263D;
+}
+.cabecalho{
+    background-color: #156669;
+}
+#logo{
+    width: 75px;
+}
+#logoName{
+    color: white;
+    align-items: last baseline;
+}
+ul{
+    height: 100%;
+}
+.listaHeader{
+    display: flex;
+}
+.itensHeader{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+footer{
+    background-color: #156669;
+}
