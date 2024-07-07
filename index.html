@@ -6,59 +6,74 @@
     <title>ConectaMedico</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <h2>Conecta Médico</h2>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="consulta.html">CONSULTAR</a></li>
-            <li><a href="cadastro.html">CADASTRAR</a></li>
-            <li><a href="agendamento.html">AGENDAMENTO</a></li>
-            <li><a href="comentarios.html">COMENTÁRIOS</a></li>
-            <li><a href="fale_conosco.html">FALE CONOSCO</a></li>
+    <header id="cabecalho">
+            <img id="logo" src="/_Imagens/_Logo/logo.png" alt="Icon Conecta Médico">
+            <label id="logo">CONECTA MÉDICO</label>
+
+            <nav id="navegador">
+        <ul ID="listaHeader">
+            <li><a class="itensHeader" href="index.html">HOME</a></li>
+            <li><a class="itensHeader" href="consulta.html">CONSULTAR</a></li>
+            <li><a class="itensHeader" href="cadastro.html">CADASTRAR</a></li>
+            <li><a class="itensHeader" href="agendamento.html">AGENDAMENTO</a></li>
+            <li><a class="itensHeader" href="comentarios.html">COMENTÁRIOS</a></li>
+            <li><a class="itensHeader" href="fale_conosco.html">FALE CONOSCO</a></li>
         </ul>
         </nav>
     </header>
-    <section>
-            <img src = "Home.png" alt="Imagem de uma consulta médica">
-            <h1>Encontre Especialistas para Sua Doença</h1>
-            <p>Se você está em busca de profissionais <em>altamente qualificados</em> para tratar uma condição específica, o Conecta Médico é o seu guia confiável</p>
-            <div>Login</div>
-            <div>Senha</div>
-    </section>
+    <section id="secao1Home">
+
+        <div id="homeHeader">
+            <div id="conteudoHome">
+            <img id="principalHeader" src = "Home.png" alt="Imagem de uma consulta médica">
+            <h1 id="tituloHeader">Encontre Especialistas para Sua Doença</h1>
+            <p id="descricaoHeader">Se você está em busca de profissionais <em>altamente qualificados</em> para tratar uma condição específica, o Conecta Médico é o seu guia confiável</p>
+            </div>
+
+            <div class="loginHome">
+                <input class="loginUserPass" type="text" placeholder="USUÁRIO"  name="USUÁRIO">
+                <input class="loginUserPass" type="password" placeholder="SENHA" name="SENHA">
+            </div>
+        </div>  
+        </section>
     <main>
-        <h2>Como funciona?</h2>
-        <p>Nossa missão é conectar pacientes a especialistas médicos experientes, proporcionando orientação personalizada e cuidados excepcionais.</p>
-        <div>Veja abaixo o passo a passo:</div>
-            <ol>
-                <section>
+        <h2 id="tituloMain">Como funciona?</h2>
+        <div id="resumoMain">
+            <p id="conteudoMain">Nossa missão é conectar pacientes a especialistas médicos experientes, proporcionando orientação personalizada e cuidados excepcionais. Veja abaixo o passo a passo:</p> 
+        </div>
+            <ol class="padraoMainInfo">
+                <section id="passo1Main">
                 <li>Pesquisa Personalizada</li>
-                    <p>Digite o nome da sua doença ou condição na barra de pesquisa. Nosso sistema inteligente identificará os especialistas mais adequados com base nas suas necessidades.</p>
+                    <p id="conteudoPasso">Digite o nome da sua doença ou condição na barra de pesquisa. Nosso sistema inteligente identificará os especialistas mais adequados com base nas suas necessidades.</p>
                 </section>
-                <section>
+                <section id="passo2Main">
                 <li>Perfil dos Especialistas</li>
-                    <p>Explore os perfis detalhados dos médicos. Saiba sobre suas especialidades, experiência, áreas de atuação e avaliações de pacientes anteriores.</p>
+                    <p id="conteudoPasso">Explore os perfis detalhados dos médicos. Saiba sobre suas especialidades, experiência, áreas de atuação e avaliações de pacientes anteriores.</p>
                 </section>
-                <section>
+                <section id="passo3Main">
                 <li>Agendamento Simples</li>
-                    <p>Marque consultas online diretamente pelo nosso site. Escolha datas e horários convenientes para você.</p>
+                    <p id="conteudoPasso">Marque consultas online diretamente pelo nosso site. Escolha datas e horários convenientes para você.</p>
                 </section>
             </ol>
     </main>
-    <footer>
-        <div>
+    <footer id="footerGeral">
+        <div class="fotoFooter">
+            <img id="logoFooter" src="/_Imagens/_Logo/logo.png" alt="logoEmpresa">
+        </div>
+        <div class="textFooter">
             <P>CNPJ: 00.000.000/0001-11</p>
             <P>Endereço: Rod. XX , Estado - MG</p>
             <P>Tel: (31) 0000-0000</p>
         </div>
-        <div>
+        <div class="socialFooter" id="centro">
             <p>Redes Sociais</p>
             <p>@ConectaMedico</p>
         </div>
-        <div>
+        <div class="politicaFooter" id="direita">
             <p>Política de Privacidade</p>
             <p>© 2024 CONECTA MEDICO</p>
         </div>
     </footer>
+    
 </body>
 </html>
