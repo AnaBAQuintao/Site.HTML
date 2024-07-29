@@ -101,193 +101,170 @@ nav ul li{
     background-color: #156669;
 }
 
-/*****************section 1 Home******************/
+/*************MAIN */
 
-#secao1Home{
+#secao1Consulta{
     display: flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-    align-items:baseline;
-    background-image: url(/Home.png);
-    background-size: cover;
-    margin: 0;
-    width: 100%;
-    height: 600px;
-
-}
-
-#homeHeader{
-    position:absolute;
-    width: 100%;
-    max-width:1400px;
-    height: 800px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 5;
-    font-style: normal;
-}
-
-#conteudoHome{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 0;
     width: 100%;
-    max-width: 45%;
+    max-width: auto;
     min-width: 300px;
-    height: 100%;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url(/_Imagens/_Section1Home/Home.png);
+    background-size: cover;
 }
-
-#tituloHeader{
-        display: flex;
-        font-size: 45px;
-        color: white;
-        align-items:center;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        margin-right: 300px;
-    }
 
 #secao1Conteudo{
-    text-align: left;
-    
-}
-
-#descricaoHeader{
-    text-align: left;
-    margin-top: 22px;
-    margin-right: 100px;
-    padding-bottom: 30%;
-    position: relative;
-    font-size: 25px;
+    position: absolute;
     color: white;
+    width: 100%;
+    max-width: 1700px;
+    min-width: 300px;
+    margin: 0 0 180px 0;
+    font-size: 30px;
+    margin-left: 350px;
 }
 
-#loginHome{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: darkgrey;
-    border-radius: 25px;
-    height: 120px;
-    padding: 4px;
-    margin: 15px;
-}
-
-.loginUserPass{
-    border-radius: 25px;
-    text-align: center;
-    background-color: #53c89b;
-    border-color: #11263d; 
-    padding: 4px;  
-    margin: 1px;  
-    
-}
-
-.loginUserPass::placeholder
-{
-    color: white;                
-}
-
-#btnLogin,#btnSenha{
-    background-color: #11263d;
-    border-radius: 25px;
-    padding: 4px;
-    margin: 1px;
-    text-align: center;
-    color: white;
-
-}
-
-
-/******************  Main  *********************/
-#conteudo2{
+#principal1Conultar{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     margin: 0 auto;
-    width: 100%;
-    max-height: max-content;
+    width: auto;
+    height: 650px;
     background-color: #11263d;
-}
+    padding-top: 20px;
+    }            
 
-
-#tituloMain{
-    width: 100%;
-    margin-right: 200px;
-    font-size: 43px;
-    color: #156669;
-    text-align:end;
-    padding-top: 15px;
-}
-
-#conteudoMain{
-    width: 100%;
-    max-width: 94%;
-    min-width: 300px;
-    max-height: max-content;
-    color: white;
-    font-size: 25px;
-    text-align:center;
-    margin: 25px 150px;
-}
-
-#descServicosHome{
+#filtroMain{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 250px;
+    height: 80px;
+    background-color: #53c89b;
+    border-radius: 25px; 
+}
+
+#resultadoBuscaMain{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-items: center; 
     width: 100%;
-    max-width: 94%;
-    min-width: 300px;
-    max-height: max-content;
-    font-size: 25px;
-    gap: 85px;
-    margin-top: 20px;
-    margin-bottom: 75px;
+    max-width: 1000px;
+    min-width: 250px;
+    height: 500px;
+    background-color: ##11263d;
+    border-radius: 25px; 
+    gap: 60px;
+    overflow-y: auto;
 }
 
-.padraoMainInfoHome{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 300px;
-    height: 300px;
-    gap: 10px;
-}
-
-
-.informativoHome1{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    background-color: white;
-    border-radius: 15px;
-    font-size: 25px;
-}
-
-.informativoHome2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color:#156669;
-    color: white;
-    border-radius: 15px;
+h5{
     font-size: 20px;
-    text-align: center;
+}
+/* Customizando a scrollbar para navegadores WebKit */
+#resultadoBuscaMain::-webkit-scrollbar 
+{
+    width: 10px; /* Largura da scrollbar */
+    height: 25%; /* Altura da scrollbar (para scroll horizontal) */
+    border-radius: 25px;
+}
+.filtros::-webkit-scrollbar 
+{
+    width: 10px;
+    border-radius: 25px;                
 }
 
-.info2Home{
-    margin: 0px 15px;
+
+#resultadoBuscaMain::-webkit-scrollbar-track 
+{
+    background:#53c89b;/* Cor do track da scrollbar */
+    border-radius: 15px;
+}
+.filtros::-webkit-scrollbar-track
+{
+    border-radius: 15px;
 }
 
-/*******Footer */
+#resultadoBuscaMain::-webkit-scrollbar-thumb:hover
+{
+    background: #11263d;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+.filtros::-webkit-scrollbar-thumb:hover
+{
+    background:#11263d;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+/***********************************/
+
+.imgFiltro{
+    justify-items: center;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.filtros{
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    justify-items: center;
+}
+
+.resBuscaContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: inherit;
+    width: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    height: 300px;
+    background-color:#53c89b;
+    border-radius: 25px;              
+}
+
+.imagemMedico{
+    display: flex;
+    width:  140px;
+    height: 100px;
+}
+
+.padraoResEspaco{
+    margin-left: 15px;
+}
+
+.infoEspaco{
+    width: 100%;
+    max-width: 90%;
+    min-width: 250px;
+}
+
+#btnConsulta{
+    background-color: #11263d;
+    border-radius: 25px;
+    padding: 4px;
+    text-align: end;
+    color: white;
+    
+}
+
+/*******Footer           */
 
 footer{
     display: flex;
@@ -336,5 +313,4 @@ footer{
     flex-direction: column;
     padding-right: 25px;
 }
-
 

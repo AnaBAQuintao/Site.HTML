@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="styleConulta.css">
 </head>
 <body>
     <header id="cabPrincipal">
@@ -12,7 +12,11 @@
         <label id="logoName">CONECTA MÉDICO</label>
 
         <nav id="navegador">
+
             <div id="listaNavegador">
+
+            </div>
+
             <ul id="listaNav">
                 <a class="fade-out" href="index.html" target="_self"><li class="itensHeader">HOME</li></a>
                 <a class="fade-out" href="consulta.html" target="_self"><li class="itensHeader">CONSULTAR</li></a>
@@ -28,33 +32,133 @@
         </div>
 
     </header>
-    <section id="secao1Home">
-        <img src = "Home.png" alt="Imagem de uma consulta médica">
-        <h1>Localize seu Médico</h1>
-    </section>
-    <main>
-            <form>
-            <legend>Filtre aqui</legend>
-                <fieldset><input type="text" name="Especialista" placeholder="Ex: Cardiologista"></fieldset>
-                <fieldset><input type="text" name="Localidade" placeholder="Ex: Belo Horizonte - MG"></fieldset>
-                <fieldset><input type="text" name="Convênio" placeholder="Ex: Unimed"></fieldset>
-                <button type="Pesquisar">Pesquisar</button>
-            </form>
-            <div>
-                <p><h2>Resultados</h2></p>
-                <article>
-                    <section><fieldset><h3>Médico1</h3>
-                    <p>Especialidade</p>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat necessitatibus officiis quibusdam sit molestias vitae quasi, vero corporis natus nostrum accusantium animi eligendi enim inventore est expedita maiores adipisci quidem.</div>
-                    </fieldset></section>
+    <section id="secao1Consulta">
+        <div id="bannerSection1">
 
-                    
-                    <section><fieldset><h3>Médico2</h3>
-                    <p>Especialidade</p>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem animi voluptate nostrum quod dicta quia ea ad porro asperiores nulla fuga nesciunt repellendus, rerum, vero natus! Accusantium dignissimos officiis corrupti.</div>
-                    </fieldset></section>
-                </article>
+        </div>
+            <div id="secao1Conteudo" class="secao1Conteudo">
+                <h1 id="textoConsuta">Localize seu médido:</h1>
             </div>
+    </section>
+    <main id="principal1Conultar">
+        <div id="filtroMain">
+            <div class="tipo1Filtro">
+                <h5>Especialidades</h5>
+                <form action="" id="formlFiltro">
+                    <img class="imgFiltro" height="15px" src="/_Imagens/_Filtros/estetoscopio.png" alt="estetoscopio">
+                    <select class="filtros" id="especialidade" name="especialidades">
+                        <option value=" "> </option>
+                        <option value="cardiologista">Cardiologista</option>
+                        <option value="neurologista">Neurologista</option>
+                        <option value="dermatologia">Dermatologia</option>
+                        <option value="gastroenterologia">Gastroenterologia</option>
+                    </select>
+                </form>
+            </div>
+            <div class="tipo1Filtro">
+                <h5>Localidade</h5>
+                <form action="" id="formlFiltro">
+                    <img class="imgFiltro" height="15px" src="/_Imagens/_Filtros/localizacao.png" alt="Localização">
+                    <select class="filtros" id="especialidade" name="especialidades">
+                        <option value=" "> </option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</optio</n>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </form>
+            </div>
+            <div class="containerFiltroConsultar">
+                <h5>Convênio</h5>
+                <form action="" id="formFiltro">
+                    <img class="imgFiltro" height="15px" src="/_Imagens/_Filtros/predio-do-hospital.png" alt="estetoscópio">
+                    <select class="filtros" id="convenio" name="convenio">
+                        <option value=" "> </option>
+                        <option value="unimed">Unimed</option>
+                        <option value="plamed">Plamed</option>
+                        <option value="bradesco">Bradesco</option>
+                        <option value="sulAmerica">Sul América</option>
+                    </select>
+                </form>                    
+            </div>
+            <div id="pesquisarBotao">
+                <button id="btnConsulta" class="btnConsulta">Pesquisar</button>
+            </div>
+        </div>
+        <div id="resultadoBuscaMain">
+            <div class="resBuscaContainer">
+                <div class="imagemMedico padraoResEspaco">
+                    <img src="/_Imagens/_MedicosBusca/medico-e-enfermeiras-em-equipamentos-especiais_23-2148980721.png" alt="imagem do Médico">
+                </div>
+                <div class="padraoResEspaco">
+                    <h2 class="nomeEspecialidadeMedico">Dr. Fulano</h2>
+                    <p  class="nomeEspecialidadeMedico">(especialidade)</p>
+                </div>
+                <div class="padraoResEspaco infoEspaco">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facilis et, exercitationem beatae dignissimos natus ut iusto perspiciatis suscipit quo provident! Tenetur quasi vel voluptas natus. Illum modi veritatis natus.
+                </div>
+            </div>
+            <div class="resBuscaContainer">
+                <div class="imagemMedico padraoResEspaco">
+                    <img src="/_Imagens/_MedicosBusca/medico-e-enfermeiras-em-equipamentos-especiais_23-2148980721.png" alt="imagem do Médico">
+                </div>
+                <div class="padraoResEspaco">
+                    <h2 class="nomeEspecialidadeMedico">Dr. Fulano</h2>
+                    <p  class="nomeEspecialidadeMedico">(especialidade)</p>
+                </div>
+                <div class="padraoResEspaco infoEspaco">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facilis et, exercitationem beatae dignissimos natus ut iusto perspiciatis suscipit quo provident! Tenetur quasi vel voluptas natus. Illum modi veritatis natus.
+                </div>
+            </div>
+            <div class="resBuscaContainer">
+                <div class="imagemMedico padraoResEspaco">
+                    <img src="/_Imagens/_MedicosBusca/medico-e-enfermeiras-em-equipamentos-especiais_23-2148980721.png" alt="imagem do Médico">
+                </div>
+                <div class="padraoResEspaco">
+                    <h2 class="nomeEspecialidadeMedico">Dr. Fulano</h2>
+                    <p  class="nomeEspecialidadeMedico">(especialidade)</p>
+                </div>
+                <div class="padraoResEspaco infoEspaco">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facilis et, exercitationem beatae dignissimos natus ut iusto perspiciatis suscipit quo provident! Tenetur quasi vel voluptas natus. Illum modi veritatis natus.
+                </div>
+            </div>
+            <div class="resBuscaContainer">
+                <div class="imagemMedico padraoResEspaco">
+                    <img src="/_Imagens/_MedicosBusca/medico-e-enfermeiras-em-equipamentos-especiais_23-2148980721.png" alt="imagem do Médico">
+                </div>
+                <div class="padraoResEspaco">
+                    <h2 class="nomeEspecialidadeMedico">Dr. Fulano</h2>
+                    <p  class="nomeEspecialidadeMedico">(especialidade)</p>
+                </div>
+                <div class="padraoResEspaco infoEspaco">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facilis et, exercitationem beatae dignissimos natus ut iusto perspiciatis suscipit quo provident! Tenetur quasi vel voluptas natus. Illum modi veritatis natus.
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
     <footer id="footerGeral">
         <div class="fotoFooter">
